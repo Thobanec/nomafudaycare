@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You — Nomafu Day Care Centre</title>
+  <meta name="description" content="Thank you for contacting Nomafu Day Care Centre — we'll be in touch soon." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <style>
+    :root {
+      --bg: #f6faff;
+      --card: #ffffffcc;
+      --accent: #6f86ff;
+      --muted: #556674;
+      --shadow: 0 10px 25px rgba(0,0,0,0.08);
+      --rainbow: linear-gradient(90deg, #ff8fb1, #ffd86b, #6be06b, #4db6ff, #7b5cff);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #f0f6ff 0%, #ffffff 100%);
+      font-family: "Inter", system-ui, sans-serif;
+      color: #112;
+    }
+
+    .card {
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      border-radius: 18px;
+      padding: 40px 28px;
+      max-width: 480px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 16px;
+      margin: 0 auto 20px;
+      background: var(--rainbow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 10px 0;
+      background: var(--rainbow);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      margin: 6px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .btn-primary {
+      background: var(--rainbow);
+      color: white;
+      box-shadow: 0 5px 18px rgba(127, 143, 255, 0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid rgba(0,0,0,0.08);
+      color: var(--muted);
+      background: white;
+    }
+
+    .btn-outline:hover {
+      background: rgba(0,0,0,0.03);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="logo">ND</div>
+    <h1>Thank You!</h1>
+    <p>Your message has been sent successfully. Our team will get back to you shortly.</p>
+
+    <a href="index.html" class="btn btn-primary">🏡 Back to Home</a>
+    <a href="https://wa.me/27672528532?text=Hello%20Nomafu%20Day%20Care!%20I%20just%20sent%20a%20message%20from%20your%20website." target="_blank" rel="noopener noreferrer" class="btn btn-outline">💬 Chat on WhatsApp</a>
+
+    <footer>© Nomafu Day Care Centre • Inkwali, Illovo</footer>
+  </div>
+</body>
+</html>
